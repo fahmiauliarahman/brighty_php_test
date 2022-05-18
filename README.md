@@ -61,13 +61,14 @@ Berikut adalah jenis join yang biasa digunakan:
     mysqldump -u root -p db_produk > db_produk_backup.sql
     ```
 
-    - Perintah ini akan menyimpan semua data dari database yang bernama db_name ke dalam file db_name.sql.
-    - Perintah ini bisa digunakan untuk backup database.
+    - Perintah ini akan menyimpan semua data dari database yang bernama db_produk ke dalam file db_produk_backup.sql.
 
 - Restore Database:
     ```bash
     mysql -u root -p db_produk_new < db_produk_backup.sql
     ```
+
+    - Perintah ini akan mengembalikan semua data dari file yang bernama db_produk_backup ke dalam database db_produk_new.sql.
 
 - hasil backup dan restore menggunakan _command line_
 ![CLI Result](./assets/cli/result.png)
