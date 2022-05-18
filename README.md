@@ -30,19 +30,19 @@
 ## Jenis Jenis Join
 Berikut adalah jenis join yang biasa digunakan:
 1. Inner Join
-    > Inner Join adalah jenis join yang akan mengembalikan nilai JIKA kedua tabel memiliki kolom yang sama. Contoh syntax:
+    > Inner Join adalah jenis join yang akan mengembalikan nilai JIKA kedua tabel memiliki nilai yang sama. Contoh syntax:
     ```sql
     SELECT a.id, a.nama, a.harga, a.nama_kategori FROM produk a INNER JOIN kategori b ON a.id_kategori = b.id;
     ```
 
 2. Left Join
-    > Left Join adalah jenis join yang akan mengembalikan seluruh data tabel A, meskipun reference key tabel B berisi data yang sama dengan reference key tabel A maupun NULL. Contoh syntax
+    > Left Join adalah jenis join yang akan mengembalikan seluruh data tabel A, meskipun reference key tabel B berisi nilai yang sama dengan reference key tabel A maupun NULL. Contoh syntax
     ```sql
     SELECT a.id, a.nama, a.harga, a.nama_kategori FROM produk a LEFT JOIN kategori b ON a.id_kategori = b.id;
     ```
 
 3. Right Join
-    > Right Join adalah jenis join yang akan mengembalikan seluruh data tabel B, meskipun reference key tabel A berisi data yang sama dengan reference key tabel B maupun NULL. Contoh syntax
+    > Right Join adalah jenis join yang akan mengembalikan seluruh data tabel B, meskipun reference key tabel A berisi nilai yang sama dengan reference key tabel B maupun NULL. Contoh syntax
     ```sql
     SELECT a.id, a.nama, a.harga, a.nama_kategori FROM produk a RIGHT JOIN kategori b ON a.id_kategori = b.id;
     ```
