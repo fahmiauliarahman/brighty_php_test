@@ -1,5 +1,5 @@
 <?php
-function segitiga($max_number)
+function segitiga(int $max_number)
 {
     for ($i = $max_number; $i >= 1; $i--) {
         for ($j = 1; $j <= $i; $j++) {

@@ -1,6 +1,6 @@
 <?php
 
-function fizzBuzz($num)
+function fizzBuzz(int $num)
 {
     for ($i = 1; $i <= $num; $i++) {
         if ($i % 3 === 0 && $i % 5 === 0) {
